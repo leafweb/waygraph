@@ -32,9 +32,11 @@ body{
    color: var(--on-background);
 }
 main{
+   position: fixed;
+   top: 0;
+   left: 0;
    width: 100%;
    height: 100%;
-   overflow: hidden auto;
 }
 .page{
    display: none;
@@ -74,6 +76,58 @@ main{
       &:active{
          scale: 0.9;
          box-shadow: 0 5px 10px #0005;
+      }
+   }
+}
+.page.chat-page{
+   .view{
+      padding-bottom: 80px;
+   }
+   form.send-message{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      background: var(--glass);
+      color: var(--on-glass);
+      width: 100%;
+      height: 50px;
+      backdrop-filter: blur(20px);
+      z-index: 5;
+      box-shadow: 0 0 20px var(--surface);
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 4px;
+      input{
+         flexgrow: 1;
+         outline: none;
+         background: none;
+         border: none;
+         box-shadow: none;
+         font-size: calc(var(--fontSize) + 2px);
+      }
+      button{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 2px;
+         aspect-ratio: 1;
+         height: 100%;
+         background: none;
+         border: none;
+         outline: none;
+         box-shadow: none;
+         border-radius: calc(var(--radius) + 2px);
+         font-size: calc(var(--fontSize) + 8px);
+         transition: 0.3s;
+         &:active{
+            scale: 0.9;
+            background: var(--glass-container);
+         }
+         &[type="submit"]{
+            color: var(--primary);
+         }
       }
    }
 }

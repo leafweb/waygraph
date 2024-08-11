@@ -6,7 +6,7 @@ let AppSettings = ()=> {
          color: 'hsl(230,100,20)',
          fontSize: 14,
          radius: 16,
-         darkmode: false,
+         darkmode: true,
       };
       appSettings = defaultSettings;
       localStorage.setItem('appSettings',JSON.stringify(appSettings));

@@ -31,9 +31,9 @@ let OpenPage = (x)=> {
 }
 let GoToHomePage = (x)=> {
    if (x != 0 && x) {
-      setTimeout(()=>{OpenPage('home')},x)
+      setTimeout(()=>{OpenPage('chat')},x)
    } else {
-      OpenPage('home')
+      OpenPage('chat')
    }
 }
 
