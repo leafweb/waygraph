@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Waygraph</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!-- style -->
+   <link rel="stylesheet/less" href="style/index.less">
+   <link rel="stylesheet" href="style/solariconset.css">
+   <!-- lib -->
+   <script src="lib/less.min.js"></script>
+   <script src="lib/Mushroom.min.js"></script>
+</head>
+<body>
+   <!-- app drawer -->
+   <div class="drawer">
+      <div class="header">
+         <div class="profilebar">
+            <div class="profile">
+               <span class="si-b si-User"></span>
+            </div>
+            <div onclick="Darkmode()" class="action">
+               <span class="si-l si-Moon-Stars"></span>
+            </div>
+         </div>
+      </div>
+      <hr>
+      <div class="list">
+         <div>
+            <div class="icon">
+               <div class="si-l si-User-Circle"></div>
+            </div>
+            <div class="label">Account</div>
+         </div>
+         <div>
+            <div class="icon">
+               <div class="si-l si-Bookmark"></div>
+            </div>
+            <div class="label">Saved Messages</div>
+         </div>
+         <div>
+            <div class="icon">
+               <div class="si-l si-Users-Group-Rounded"></div>
+            </div>
+            <div class="label">New Group</div>
+         </div>
+         <div>
+            <div class="icon">
+               <div class="si-l si-TV"></div>
+            </div>
+            <div class="label">Channel</div>
+         </div>
+         <div>
+            <div class="icon">
+               <div class="si-l si-Phone"></div>
+            </div>
+            <div class="label">Calls</div>
+         </div>
+         <div>
+            <div class="icon">
+               <div class="si-l si-Settings"></div>
+            </div>
+            <div class="label">Settings</div>
+         </div>
+      </div>
+   </div>
+   <!-- backdrop -->
+   <div class="backdrop"></div>
+   <!-- main -->
+   <main>
+      <!-- splash screen -->
+      <div class="page splash-screen-page show">
+         <!-- logo -->
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+            <defs>
+               <style>
+                  .logo-blob {
+                     filter: drop-shadow(-40px 40px 40px #0005);
+                  }
+               </style>
+               <linearGradient id="fillGrad0" x1="100%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="var(--secondary-70)" />
+                  <stop offset="100%" stop-color="var(--primary-70)" />
+               </linearGradient>
+            </defs>
+            <rect fill="url(#fillGrad0)" width="1000" height="1000" rx="200" />
+            <path class="logo-blob" fill="var(--primary-10)" d="M100,700L400,700Q500,700,500,600L500,300Q500,200,400,200L300,200Q200,200,200,300L200,600Q200,700,100,700z" />
+            <path class="logo-blob" fill="var(--primary-10)" d="M800,600L700,600Q600,600,600,500L600,200Q600,100,700,100L800,100Q900,100,900,200L900,700Q900,600,800,600z" />
+            <path class="logo-blob" fill="var(--primary-10)" d="M700,850Q800,850,800,700L800,800Q800,900,700,900L425,900Q400,900,400,875Q400,850,425,850L700,850z" />
+            <path fill="var(--primary-90)" d="M375,225L400,225A75 75 0 0 1 475,300L475,375A75 75 0 0 1 400,450L375,450A75 75 0 0 1 300,375L300,300A75 75 0 0 1 375,225z" />
+            <path fill="var(--primary-90)" d="M775,125L800,125A75 75 0 0 1 875,200L875,275A75 75 0 0 1 800,350L775,350A75 75 0 0 1 700,275L700,200A75 75 0 0 1 775,125z" />
+         </svg>
+         <p>Waygraph</p>
+      </div>
+      <!-- Home page -->
+      <div class="page home-page">
+         <div class="appbar">
+            <div class="left">
+               <span onclick="OpenDrawer()" class="si-l si-Hamburger-Menu"></span>
+            </div>
+            <div class="center">
+               <div class="title">Waygraph</div>
+            </div>
+            <div class="left">
+               <span onclick="OpenPage('search')" class="si-l si-Minimalistic-Magnifer"></span>
+            </div>
+         </div>
+         <div class="cath-list"></div>
+         <button class="fab">
+            <span class="si-b si-Pen"></span>
+         </button>
+      </div>
+      <!-- search page -->
+      <div class="page search-page">
+         <div class="appbar">
+            <div class="left">
+               <div onclick="GoToHomePage()" class="si-l si-Arrow-Left"></div>
+            </div>
+            <div class="center"></div>
+            <div class="right">
+               <span class="si-b si-Minimalistic-Magnifer"></span>
+            </div>
+         </div>
+      </div>
+   </main>
+   <!-- script -->
+   <script src="script/theme.js"></script>
+   <script src="script/nav.js"></script>
+</body>
+</html>
