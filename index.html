@@ -49,13 +49,13 @@
             <div class="icon">
                <div class="si-l si-TV"></div>
             </div>
-            <div class="label">Channel</div>
+            <div class="label"> New Channel</div>
          </div>
          <div>
             <div class="icon">
                <div class="si-l si-Phone"></div>
             </div>
-            <div class="label">Calls</div>
+            <div class="label">New Calls</div>
          </div>
          <div>
             <div class="icon">
@@ -106,7 +106,22 @@
                <span onclick="OpenPage('search')" class="si-l si-Minimalistic-Magnifer"></span>
             </div>
          </div>
-         <div class="cath-list"></div>
+         <div class="chat-list view">
+            <div onclick="OpenPage('chat')">
+               <div class="avatar">
+                  <span class="si-b si-User"></span>
+               </div>
+               <div class="text">
+                  <div class="title">
+                     <span>Mahdi</span>
+                  </div>
+                  <div class="subtitle">
+                     <span>No message yet</span>
+                     <div> Last seen at 5:23 AM</div>
+                  </div>
+               </div>
+            </div>
+         </div>
          <button class="fab">
             <span class="si-b si-Pen"></span>
          </button>
@@ -117,9 +132,30 @@
             <div class="left">
                <div onclick="GoToHomePage()" class="si-l si-Arrow-Left"></div>
             </div>
-            <div class="center"></div>
+            <form method="dialog">
+               <input type="text">
+            </form>
             <div class="right">
                <span class="si-b si-Minimalistic-Magnifer"></span>
+            </div>
+         </div>
+         <div class="view">
+
+         </div>
+      </div>
+      <!-- chat page -->
+      <div class="page chat-page">
+         <div class="appbar">
+            <div class="left">
+               <div onclick="GoToHomePage()" class="si-l si-Arrow-Left"></div>
+               <div class="avatar si-b si-User"></div>
+            </div>
+            <div class="center">
+               <div class="title"> Mahdi </div>
+               <div class="subtitle">Last seen at 5:23 AM</div>
+            </div>
+            <div class="right">
+               <span class="si-l si-Donts"></span>
             </div>
          </div>
       </div>
